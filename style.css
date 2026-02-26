@@ -1,0 +1,593 @@
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+ }
+ body{
+    width: 100%;
+  font-family: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+
+  
+
+  line-height: 1.8;
+}
+form i{
+  transform: translate(28px , 22px);
+  font-size: 22px;
+
+}
+/*  */
+/*  */
+.container-fluid h3{
+  color: #1b5e45;
+}
+
+.navbar{
+    background-color: rgb(138, 109, 71);
+    
+}
+
+.home{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.bodyhome{
+    height: 100vh;
+    background-color:rgb(27, 94, 69) !important;
+
+    text-align: center;
+   
+    height: 100vh;
+    background-color: rgb(27, 94, 69) !important;
+    padding:  170px;
+    text-align: center;
+
+}
+.bodyhome p{
+        transform: translateY(100px);
+
+}
+.bodyhome h1{
+    font-size: 54px;
+        transform: translateY(100px);
+
+}
+
+#btn{
+    transform: translateY(100px);
+    background-color: rgb(223, 164, 34);
+    padding: 17px;
+}
+#btn:hover{
+    background-color: rgb(32, 212, 47);
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+@media (max-width: 991px) {
+  #Nav {
+    display: flex !important;  /* إجبار الروابط على الظهور */
+    flex-direction: column;     /* عمودي لو تحب */
+  }
+}
+/* روابط النافبار */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #1b5e45;
+  font-size: 18px;
+  padding: 8px 0;
+}
+
+/* الخط اللي تحت */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(223, 164, 34); /* لون الخط */
+  transition: width 0.3s ease;
+}
+
+/* عند الـ hover */
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* تغيير لون النص */
+.navbar-nav .nav-link:hover {
+  color: rgb(223, 164, 34);
+}
+/* ////////////////////////////////sec3 */
+.titelthree{
+      direction: rtl;
+
+}
+.titelthree h2{
+color: #1b5e45;
+font-size: 34px;
+}
+
+.secthree{
+    transform: translateY(40px);
+    border: #afb2b0 solid 1px;
+    border-radius: 18px;
+    margin-left: auto;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(248, 248, 226);
+}
+#threebtn{
+    
+    transform: translateY(40px);
+
+}
+/* ////////////////card */
+.card-body{
+      direction: rtl;
+
+}
+.threecard .card-group{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 88px;
+}
+.threecard .card img{
+  
+  padding: 22px;
+  
+}
+
+.threecard .card a{
+    padding: 0 22px ;
+    text-decoration: none;
+    color: #1b5e45;
+    font-size: 18px;
+}
+.threecard .card a:hover{
+    color: rgb(83, 231, 135);
+}
+.since{
+    border: none;
+    background-color: #1b5e45;
+    width: 14%;
+    font-size: 17px;
+    border-radius: 18px;
+    color: aliceblue;
+    
+}
+.threecard .card h5{
+    color: #1b5e45;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+.threecard .card{
+  transition: 0.3s ease;
+}
+
+.threecard .card:hover{
+  transform: translateY(-8px);
+}
+@media (max-width: 576px) {
+
+  .secthree{
+    padding: 20px 10px;
+  }
+
+  #threebtn{
+    width: 100%;
+    margin: 0 0 20px 0 !important;
+    font-size: 14px;
+    /* padding-bottom: 40px; */
+  }
+ 
+
+  .titelthree h2{
+    font-size: 20px;
+    
+  }
+
+  .titelthree p{
+    font-size: 14px;
+  }
+
+  .threecard .card-group{
+    flex-direction: column;
+  }
+
+  .threecard img{
+    height: 180px;
+  }
+
+  .card-title{
+    font-size: 16px;
+  }
+
+  .card-text{
+    font-size: 14px;
+  }
+}
+@media (min-width: 577px) and (max-width: 991px) {
+
+  .threecard .card-group{
+    flex-wrap: wrap;
+  }
+
+  .threecard .card{
+    width: 48%;
+  }
+
+  .threecard img{
+    height: 200px;
+  }
+
+  .card-title{
+    font-size: 17px;
+  }
+}
+@media (min-width: 1200px) {
+
+  .threecard img{
+    height: 260px;
+  }
+
+  .card-title{
+    font-size: 18px;
+  }
+}
+/* //////////////////السورة القرانية  */
+.soura{
+  
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   justify-content: center;
+  /* text-align: center; */
+}
+.souracon p{
+  text-align: center;
+  font-size: 18px;
+  color: #1b5e45;
+  font-weight:bold;
+}
+.souracon{
+  background-color: antiquewhite;
+  border: none;
+  padding: 17px;
+  border-radius: 18px ;
+  /* font-size: 45px; */
+  /* transform: translateY(22px); */
+  transition: all .5s;
+  
+}
+.souracon:hover{
+  transform: scale(1.02);
+  
+}
+.souracon h3{
+  font-size: 30px;
+  color: #1b5e45;
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+/* ////////////////////////footer  */
+footer{
+  direction: rtl;
+  width: 100%;
+  overflow: hidden;
+  height: 80vh;
+  background-color: #1f1e1e;
+}
+.menfot{
+  display: flex;
+
+}
+.menu-icon{
+  border: none;
+  border-radius: 18px;
+  background-color: rgb(224, 160, 82);
+  font-size: 44px;
+  color: aliceblue;
+}
+.menfot h2{
+  font-size: 30px;
+  color: rgb(228, 178, 117);
+
+}
+.contener{
+  transform: translateY(44px);
+  width: 80%;
+  margin: auto;
+  border-bottom: #afb2b0 solid 2px;
+  padding-bottom: 80px;
+
+}
+.contener h5{
+  color: aliceblue;
+  padding: 24px;
+  border-bottom:2px solid #afb2b0;
+
+}
+.contener a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.contener a:hover{
+  color: aqua;
+}
+.contener  p{
+  color: aliceblue;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 20px;
+    transform: translateY(44px);
+}
+
+.social-icons {
+    margin-bottom: 15px;
+    font-size:29px;
+
+}
+.social-icons :hover{
+  color: rgb(255, 127, 127);
+}
+
+.social-icons a {
+    color: #bdbdbd;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.disclaimer {
+    font-size: 12px;
+    color: #777;
+}
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-column {
+        text-align: center;
+    }
+    .logo-section {
+        justify-content: center;
+    }}
+    header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.upnav{
+    width: 100%;
+    height: 32px;
+    background-color: #e8d5c4;
+}
+/* //////////// */
+#departs{
+  transform: translateY(80px) !important;
+}
+hr{
+    color: black;
+}
+a h1{
+    color: #1b5e45;
+    font-size: 24px;
+}
+a p{
+    font-size: 12px;
+}
+.navbar input{
+    background-color: #f4efe9;
+    padding: 8px 40px 8px 16px;
+    border-radius: 20px;
+}
+#departs .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#departs .content-sec{
+    text-align: center;
+
+}
+#departs .content-sec i{
+    padding-top: 7px;
+     margin: 0px,0px,16px;
+     width: 50px;
+  height: 50px;
+  background-color:#1b5e45;
+  color: white;
+  
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .book{
+    margin: 0px,0px,16px;
+  width: 64px;
+  height: 64px;
+  background-color: #5d9e7f;
+  color: white;
+  display: flex;
+  justify-content:center;   
+  align-items: center;       
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .heart{
+ margin: 0px,0px,16px;
+width: 64px;
+  height: 64px;
+  background-color: #d4a574;
+  color: white;
+  display: flex;
+  justify-content:center;   
+  align-items: center;       
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .pin{
+   margin: 0px,0px,16px;
+     width: 64px;
+  height: 64px;
+  background-color:#1b5e45;
+  color: white;
+  display: flex;
+  justify-content:center;   
+  align-items: center;       
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .file{
+  margin: 0px,0px,16px;
+    width: 64px;
+  height: 64px;
+  background-color: #5d9e7f;
+  color: white;
+  display: flex;
+  justify-content:center;   
+  align-items: center;       
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .arrow{
+    margin: 0px,0px,16px;
+    width: 64px;
+  height: 64px;
+  background-color: #d4a574;
+  color: white;
+  display: flex;
+  justify-content:center;   
+  align-items: center;       
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .calls{
+    margin: 0px,0px,16px;
+     width: 64px;
+  height: 64px;
+  background-color:#1b5e45;
+  color: white;
+  display: flex;
+  justify-content:center;   
+  align-items: center;       
+  border-radius: 10px;       
+  font-size: 35px;
+}
+.card .ancors{
+    display: flex;
+    justify-content: space-between;
+}
+.card .ancors a{
+    color:#1b5e45 ;
+    text-decoration: none;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+
+.ancors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.ancors a {
+  text-decoration: none;
+  color: #198754;
+  font-weight: bold;
+}
+
+.ancors a:hover {
+  text-decoration: underline;
+}
+.before-footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  background-color: #1b5e45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 64px 0px;
+}
+.before-footer .content-p{
+  padding:0px 16px;
+}
+.before-footer .content-p h2{
+  color: #ffffff;
+  margin: 0px,0px,24px;
+  font-size: 36px;
+}
+.before-footer .content-p p{
+   color: #ffffff;
+  margin: 0px 0px 24px;
+  font-size: 18px;
+}
+.before-footer .content-p .buttons{
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.before-footer .content-p .b1{
+  width: 115px;
+  height: 48px;
+  color: #1b5e45;
+  font-size: 18px;
+  background-color: #d4a574;
+  padding: 24px 12px;
+  text-align: center;
+  padding: 10px;
+}
+.before-footer .content-p .b2{
+width: 115px;
+  height: 48px;
+  color:#1b5e45;
+  font-size: 18px;
+  background-color: #d4a574;
+  padding: 24px 12px;
+  text-align: center;
+  padding: 10px;
+}
+
+.ads-b {
+  background-color: #d4a574;
+  display: flex;
+  justify-content: center;
+}
